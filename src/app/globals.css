@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+.ant-btn-primary {
+    @apply bg-sky-500
+}
+
+.grid-debug {
+    @apply border rounded-md border-slate-800 border-dashed h-5
+}
+
+.dashboard-title {
+    @apply text-[#333333] w-full max-w-[1653px] mx-auto text-left text-3xl;
+}
+
+.dashboard-block {
+    @apply p-4 rounded-md  border border-[#d4d4d4] bg-white;
+}
+
+.dashboard-kpi-title {
+    @apply text-center text-black font-semibold text-sm mb-1;
+}
+
+.dashboard-kpi-figure {
+    @apply text-center text-black font-semibold text-4xl;
+}
+
+.dashboard-kpi-delta-text {
+    @apply text-center text-black text-xs;
+}
+
+.dashboard-kpi-delta-value {
+    @apply text-center text-black font-semibold text-sm text-[#007373] me-1;
+}
+
+@layer base {
+    h1, h2, h3, h4, h5, h6, p, span, a, button {
+      @apply font-sans;
+    }
+  }
